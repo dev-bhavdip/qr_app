@@ -1,0 +1,30 @@
+{
+  "name": "qrdemo",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "3.47.3",
+    "@shopify/cli": "3.47.3",
+    "@shopify/react-form": "^2.5.5",
+    "@shopify/react-hooks": "^3.0.5",
+    "dayjs": "^1.11.9",
+    "mysql2": "^3.4.5",
+    "qrcode": "^1.5.0"
+  },
+  "author": "bhavdip-dodiya",
+  "private": true,
+  "workspaces": [
+    "web",
+    "web/frontend",
+    "extensions/*"
+  ]
+}
